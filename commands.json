@@ -1,0 +1,32 @@
+{
+  "start": {
+    "command": "npm run dev",
+    "description": "Starts the frontend development server.",
+        "alias": "start"
+  },
+  "build": {
+    "command": "npm run build",
+    "description": "Builds the production bundle.",
+    "alias": "build"
+  },
+    "preview": {
+        "command": "npm run preview",
+        "description": "Previews the built application.",
+        "alias": "preview"
+    },
+  "lint": {
+    "command": "npx eslint src/**/*.tsx",
+    "description": "Lints the code.",
+    "alias": "lint"
+  },
+  "format": {
+    "command": "npx prettier --write src/**/*.tsx",
+    "description": "Formats the code.",
+    "alias": "format"
+  },
+    "full_app_start":{
+        "command": "sh startup.sh",
+        "description": "Starts the full application using the startup script.",
+        "alias": "full"
+    }
+}
